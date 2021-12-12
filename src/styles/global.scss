@@ -12,3 +12,11 @@
 	align-items: center;
 	font-weight: bold;
 }
+
+.images {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	&__container {
+		max-height: min-content;
+	}
+}
