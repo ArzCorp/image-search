@@ -6,14 +6,19 @@ export default function App() {
 	return (
 		<>
 			<Header handleSubmit={(data) => setImages(data.results)} />
-			<div className="images">
-				{images.map((image) => (
-					<article className="images__container" key={image.id}>
-						<img src={image.urls.small} alt={image.alt_description} />
-					</article>
-				))}
+			<div className="container">
+				<div className="images">
+					{images.map((image) => (
+						<article className="images__container" key={image.id}>
+							<img
+								className="images__container--img"
+								src={image.urls.small}
+								alt={image.alt_description}
+							/>
+						</article>
+					))}
+				</div>
 			</div>
-			<h1>IMAGE SEARCH APP</h1>
 		</>
 	)
 }

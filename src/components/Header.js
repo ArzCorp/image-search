@@ -11,7 +11,7 @@ export default function Header({ handleSubmit }) {
 	})
 
 	return (
-		<header>
+		<header className="header">
 			<form
 				onSubmit={(e) => {
 					e.preventDefault()
@@ -19,6 +19,8 @@ export default function Header({ handleSubmit }) {
 				}}
 			>
 				<input
+					className="header__input"
+					placeholder="Ingresa un palabra"
 					value={fields.search}
 					type="text"
 					name="search"
