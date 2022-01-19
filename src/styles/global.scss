@@ -12,3 +12,36 @@
 	align-items: center;
 	font-weight: bold;
 }
+
+.container {
+	width: 100%;
+	max-width: 1024px;
+	margin: 0px auto;
+}
+
+.header {
+	width: 100%;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+	padding: 30px 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__input {
+		border: 1px solid rgba(0, 0, 0, 0.144);
+		border-radius: 10px;
+		padding: 10px 20px;
+	}
+}
+
+.images {
+	gap: 20px;
+	column-count: 3;
+	&__container {
+		width: 100%;
+		height: fit-content;
+		margin-bottom: 20px;
+		&--img {
+			width: 100%;
+		}
+	}
+}
